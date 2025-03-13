@@ -27,6 +27,10 @@
     }
   }
   form {
+    //here it is
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: 1px solid #999;
     display: flex;
     justify-content: space-between;
@@ -42,6 +46,7 @@
       border: none;
       padding: 0px 10px;
       width: 200px;
+      border-bottom-left-radius: 5px;
 
       @include lg {
         padding: 0px 5px;
@@ -71,12 +76,13 @@
       }
     }
 
-    
     button {
       border: none;
       cursor: pointer;
       background-color: #fece51;
       flex: 1;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
 
       @include sm {
         padding: 10px;
