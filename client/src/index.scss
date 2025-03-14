@@ -1,15 +1,41 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  
+    /* Scrollbar styling for WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 8px; /* Set the width of the scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc; /* Light color for the scrollbar thumb */
+      border-radius: 50%; /* Rounded corners for the scrollbar thumb */
+      //border: 2px solid #f0f0f0; /* Add padding effect by setting a light border */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f5f5f5; /* Light color for the track */
+      border-radius: 10px; /* Rounded corners for the track */
+    }
+
+    /* Scrollbar styling for Firefox */
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #ccc #f5f5f5; /* Thumb color (#ccc) and track color (#f5f5f5) */
+
+    &:hover::-webkit-scrollbar-thumb {
+      background-color: #aaa; /* Darker color when hovering over the scrollbar */
+    }
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    overflow: hidden
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
 }
+
