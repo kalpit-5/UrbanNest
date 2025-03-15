@@ -2,7 +2,7 @@ import { listData } from "../../lib/dummydata.js";
 import "./listPage.scss";
 import Filter from "../../components/filter/Filter";
 import Card from "../../components/card/Card.jsx";
-import Map from "../../components/map/map.jsx";
+import Map from "../../components/map/Map.jsx";
 
 function ListPage() {
   const data = listData;
